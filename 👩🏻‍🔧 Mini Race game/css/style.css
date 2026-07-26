@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game {
+    position: relative;
+    width: 400px;
+    height: 700px;
+    overflow: hidden;
+    border: 4px solid #333;
+    border-radius: 12px;
+    background: #2e7d32;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#score {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+#road {
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    background: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-left: 6px solid #fff;
+    border-right: 6px solid #fff;
+}
+
+.line {
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Auto Designs */
+#player, .enemy {
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+#player::before, #player::after,
+.enemy::before, .enemy::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    background: #111;
+    border-radius: 2px;
+}
+
+#player::before, .enemy::before { left: -6px; top: 12px; box-shadow: 0 48px 0 #111; }
+#player::after, .enemy::after { right: -6px; top: 12px; box-shadow: 0 48px 0 #111; }
+
+#player {
+    background: #f57ec1;
+    bottom: 30px;
+    left: 95px;
+}
+
+.enemy {
+    background: #1e88e5;
+}
+
+#menu {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#menu h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.traffic-light {
+    background: #222;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 3px solid #444;
+}
+
+.light {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: transform 0.2s, filter 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.red { background: #d32f2f; box-shadow: 0 0 15px #d32f2f; }
+.orange { background: #f57c00; box-shadow: 0 0 15px #f57c00; }
+.green { background: #388e3c; box-shadow: 0 0 15px #388e3c; }
+
+/* Game Over Screen */
+#gameOver {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 200;
+}
+
+#gameOver h1 {
+    font-size: 40px;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+#gameOver p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#restartBtn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#restartBtn:hover {
+    background: #43a047;
+    transform: scale(1.05);
+}

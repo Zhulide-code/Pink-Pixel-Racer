@@ -21,3 +21,5 @@ A cute and fast retro 2D arcade racing game built with pure HTML, CSS, and JavaS
 * **JavaScript (Vanilla)** – Game loop, movement physics, and collision detection
 
 ---
+<img width="534" height="745" alt="Scherm­afbeelding 2026-08-25 om 13 55 04" src="https://github.com/user-attachments/assets/de0fdc82-0640-4fad-94bc-5c2fb82fc6e9" />
+<img width="493" height="747" alt="Scherm­afbeelding 2026-08-25 om 13 55 10" src="https://github.com/user-attachments/assets/d63f1876-9a5a-4ace-9aaa-6ecbd17a26d0" />

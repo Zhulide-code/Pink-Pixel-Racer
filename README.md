@@ -1,6 +1,6 @@
 # 🚗 Pink Pixel Racer
 
-A cute and fast retro 2D arcade racing game built with pure HTML, CSS, and JavaScript! Avoid the blue enemy cars, pick your difficulty using the traffic light menu, and go for the highest score possible as fast as you can. Try it out 
+A cute and fast retro 2D arcade racing game built with pure HTML, CSS, and JavaScript! Avoid the blue enemy cars, pick your difficulty using the traffic light menu, and go for the highest score possible as fast as you can. Try it out  
 
 ---
 
